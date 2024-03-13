@@ -16,7 +16,7 @@
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   validated: () => (/* binding */ validated)\n/* harmony export */ });\nvar _require = __webpack_require__(/*! address */ \"address\"),\n  mac = _require.mac;\nvar allAddress = [\"9c:3e:53:82:ca:88\"];\nvar findAddress = function findAddress(address) {\n  return allAddress.find(function (add) {\n    return add === address;\n  });\n};\nvar validated = function validated() {\n  var result = true;\n  mac(function (err, addr) {\n    if (!findAddress(addr)) {\n      result = false;\n    }\n  });\n  return result;\n};\n\n//# sourceURL=webpack://thuy-imess-html/./js/address.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   validated: () => (/* binding */ validated)\n/* harmony export */ });\nvar _require = __webpack_require__(/*! address */ \"address\"),\n  mac = _require.mac;\nvar allAddress = [\"9c:3e:53:82:ca:88\", \"c4:b3:01:9a:e2:de\"];\nvar findAddress = function findAddress(address) {\n  return allAddress.find(function (add) {\n    return add === address;\n  });\n};\nvar validated = function validated() {\n  var result = true;\n  mac(function (err, addr) {\n    if (!findAddress(addr)) {\n      result = false;\n    }\n  });\n  return result;\n};\n\n//# sourceURL=webpack://thuy-imess-html/./js/address.js?");
 
 /***/ }),
 
